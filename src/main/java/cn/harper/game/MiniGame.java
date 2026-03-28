@@ -62,7 +62,7 @@ public class MiniGame {
         //允许调整大小
         glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
 
-        window = glfwCreateWindow(width, height, "2048 Mini Game LWJGL" + Version.getVersion(), NULL, NULL);
+        window = glfwCreateWindow(width, height, "2048 Mini Game LWJGL( " + Version.getVersion()+" )", NULL, NULL);
         if (window == NULL) throw new RuntimeException("Failed to create the GLFW window");
 
         //监听键盘

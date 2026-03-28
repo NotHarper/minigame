@@ -17,7 +17,7 @@ public class GameUtils {
     public static int[][] grid = new int[RendererUtils.grid_size][RendererUtils.grid_size];
 
     public static void moveUp() {
-        //row是行
+        //row是行 col是列
         for (int row = 0; row < RendererUtils.grid_size; row++) {
             int[] line = grid[row].clone();
             //compact是压缩后的数组，移除了0；
